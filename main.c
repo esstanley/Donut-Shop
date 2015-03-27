@@ -1,5 +1,5 @@
 /* Filename: main.c
- * Last Modified: 3/21/2015
+ * Last Modified: 3/27/2015
  * 
  * Assignment 4 
  * Eugene Stanley
@@ -18,10 +18,10 @@ pthread_t thread_id [NUMCONSUMERS+NUMPRODUCERS], sig_wait_id;
 
 /* main program */
 int main(int argc, char *argv[]) {
+
     /* main variables */
-    int i, j, k;
     struct timeval randtime, first_time, last_time;
-    int arg_array[NUMCONSUMERS];
+    int arg_array[NUMCONSUMERS+NUMPRODUCERS];
 
     /* variables for signal handling */
     struct sigaction new_act;
@@ -32,6 +32,9 @@ int main(int argc, char *argv[]) {
     /* structures for initialing threads: not mandatory */
     pthread_attr_t thread_attr;
     struct sched_param sched_struct;
+
+    /* counters and temp variables */
+    int i, j, k;
 
     /* Initial timestamp value for performance measurement */
     gettimeofday(&first_time, (struct timezone *) 0);
@@ -53,6 +56,8 @@ int main(int argc, char *argv[]) {
         shared_ring.spaces [i] = NUMSLOTS;
         shared_ring.donuts [i] = 0;
     }
+
+    printf("\nSetting up signal handling for main...\n");
 
     /**********************************************************************/
     /* SETUP FOR MANAGING THE SIGTERM SIGNAL, BLOCK ALL ASYNC SIGNALS     */
@@ -76,8 +81,8 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    printf("Just before threads created\n");
-
+    printf("Signal management complete\n");
+    printf("Beginning thread creation...\n");
 
     /*********************************************************************/
     /* CREATE SIGNAL HANDLER THREAD                                      */
@@ -87,6 +92,7 @@ int main(int argc, char *argv[]) {
         printf("Failed to create signal waiter thread\n");
         exit(3);
     }
+    printf("Signal waiter created...\n");
 
     /* set attributes for consumer and producer threads*/
     pthread_attr_init(&thread_attr);
@@ -112,15 +118,17 @@ int main(int argc, char *argv[]) {
         } else 
            if (DEBUG) printf("Launching consumer thread %d\n",i+1);
     }
-    for ( ; i < NUMCONSUMERS + NUMPRODUCERS; i++) {
+    printf("Consumer threads created...\n");
+
+    for ( ; i < NUMCONSUMERS + NUMPRODUCERS; i++){	
         if (pthread_create(&thread_id[i], &thread_attr,
                 producer, (void *) &arg_array [i]) != 0) {
             printf("Failed to create producer %d\n", i-NUMCONSUMERS);
             exit(3);
         } else 
-           if (DEBUG) printf("Launching producer thread %d\n",i-NUMCONSUMERS);
+           if ( DEBUG ) printf("Launching producer thread %d\n", arg_array[i]);
     }
-    printf("Thread creation complete\n");
+    printf("Producer threads created...\nThread creation complete\n");
 
     /*********************************************************************/
     /* WAIT FOR ALL CONSUMERS TO FINISH, SIGNAL WAITER WILL              */
@@ -128,6 +136,7 @@ int main(int argc, char *argv[]) {
     /* THE ENTIRE PROCESS....OTHERWISE MAIN THREAD WILL EXIT             */
     /* THE PROCESS WHEN ALL CONSUMERS ARE FINISHED                       */
     /*********************************************************************/
+    printf("Waiting for consumers to finish...\n\n");
     for (i = 0; i < NUMCONSUMERS; i++) {
         pthread_join(thread_id [i], NULL);
         if (DEBUG) printf("Joined thread #%d", i);
@@ -172,3 +181,5 @@ void sig_handler(int sig) {
             thread_index, sig);
     exit(1);
 } /* end sig_handler */
+
+

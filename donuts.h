@@ -20,8 +20,8 @@
 #define         NUMSLOTS        	1000
 #define         NUMCONSUMERS     	50
 #define		NUMPRODUCERS		30
-#define         DOZENS                  200
-#define         DEBUG                   1       /* 1=ON, 0=OFF */
+#define         DOZENS                  10
+#define         DEBUG                   0       /* 1=ON, 0=OFF */
 
 /* Ring buffer */
 struct donut_ring {
