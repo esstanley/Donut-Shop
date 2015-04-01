@@ -1,0 +1,363 @@
+/* Filename: consumer_output.txt
+ * Last Modified: 3/31/2015
+ * 
+ * Assignment 4 
+ * Eugene Stanley
+ * eugene.stanley@gmail.com
+ */
+ 
+ /******************FIRST SAMPLE CONSUMER*************************************/
+ Consumer thread number: 1	Time: 23:42:51:316401
+Dozen#: 1
+plain:     	31
+jelly:     	37	38	39	40
+chocolate: 	31	32	33	34
+honey-dip: 	45	46	47
+
+Consumer thread number: 1	Time: 23:42:51:416675
+Dozen#: 2
+plain:     	88	89	90
+jelly:     	111	112
+chocolate: 	91	92	93
+honey-dip: 	106	107	108	109
+
+Consumer thread number: 1	Time: 23:42:51:516870
+Dozen#: 3
+plain:     	171	172
+jelly:     	210	211	212
+chocolate: 	181	182
+honey-dip: 	206	207	208	209	210
+
+Consumer thread number: 1	Time: 23:42:51:617129
+Dozen#: 4
+plain:     	293
+jelly:     	337	338	339
+chocolate: 	308	309	310	311
+honey-dip: 	334	335	336	337
+
+Consumer thread number: 1	Time: 23:42:51:717326
+Dozen#: 5
+plain:     	441	442
+jelly:     	482	483	484	485	486
+chocolate: 	469	470	471
+honey-dip: 	480	481
+
+Consumer thread number: 1	Time: 23:42:51:817464
+Dozen#: 6
+plain:     	611
+jelly:     
+chocolate: 	610	611	612	613	614
+honey-dip: 	643	644	645	646	647	648
+
+Consumer thread number: 1	Time: 23:42:51:917660
+Dozen#: 7
+plain:     	759	760
+jelly:     	740	741	742
+chocolate: 	784	785	786
+honey-dip: 	789	790	791	792
+
+Consumer thread number: 1	Time: 23:42:52:17814
+Dozen#: 8
+plain:     	917	918	919	920	921	922
+jelly:     	875
+chocolate: 	939	940
+honey-dip: 	941	942	943
+
+Consumer thread number: 1	Time: 23:42:52:118007
+Dozen#: 9
+plain:     	1094	1095
+jelly:     	1021	1022
+chocolate: 	1083	1084
+honey-dip: 	1074	1075	1076	1077	1078	1079
+
+Consumer thread number: 1	Time: 23:42:52:218191
+Dozen#: 10
+plain:     	1242	1243	1244	1245
+jelly:     	1171
+chocolate: 	1227	1228	1229	1230
+honey-dip: 	1232	1233	1234
+
+/******************SECOND SAMPLE CONSUMER*************************************/
+Consumer thread number: 8	Time: 23:42:51:540471
+Dozen#: 1
+plain:     	205	206
+jelly:     	239	240	241
+chocolate: 	212	213	214	215
+honey-dip: 	232	233	234
+
+Consumer thread number: 8	Time: 23:42:51:640801
+Dozen#: 2
+plain:     	327	328	329	330	331
+jelly:     	371	372	373	374	375
+chocolate: 
+honey-dip: 	373	374
+
+Consumer thread number: 8	Time: 23:42:51:741038
+Dozen#: 3
+plain:     	480	481	482	483
+jelly:     	511	512
+chocolate: 	507
+honey-dip: 	518	519	520	521	522
+
+Consumer thread number: 8	Time: 23:42:51:841263
+Dozen#: 4
+plain:     	652	653	654
+jelly:     	636	637	638
+chocolate: 	649	650
+honey-dip: 	679	680	681	682
+
+Consumer thread number: 8	Time: 23:42:51:941441
+Dozen#: 5
+plain:     	799	800	801	802
+jelly:     	773
+chocolate: 	820	821	822
+honey-dip: 	824	825	826	827
+
+Consumer thread number: 8	Time: 23:42:52:41621
+Dozen#: 6
+plain:     	963	964	965	966	967
+jelly:     	910	911
+chocolate: 	974
+honey-dip: 	969	970	971	972
+
+Consumer thread number: 8	Time: 23:42:52:141828
+Dozen#: 7
+plain:     	1129
+jelly:     	1059	1060	1061
+chocolate: 	1115	1116	1117	1118	1119
+honey-dip: 	1113	1114	1115
+
+Consumer thread number: 8	Time: 23:42:52:242001
+Dozen#: 8
+plain:     	1276	1277	1278	1279	1280
+jelly:     	1202	1203
+chocolate: 	1267	1268	1269	1270
+honey-dip: 	1271
+
+Consumer thread number: 8	Time: 23:42:52:342223
+Dozen#: 9
+plain:     	1432	1433	1434	1435
+jelly:     	1333	1334	1335
+chocolate: 	1414	1415	1416
+honey-dip: 	1437	1438
+
+Consumer thread number: 8	Time: 23:42:52:442483
+Dozen#: 10
+plain:     	1586
+jelly:     	1485	1486	1487	1488	1489	1490	1491
+chocolate: 	1557	1558
+honey-dip: 	1588	1589
+
+/******************THIRD SAMPLE CONSUMER*************************************/
+Consumer thread number: 25	Time: 23:42:51:428110
+Dozen#: 1
+plain:     	96	97	98
+jelly:     	116	117	118	119
+chocolate: 	101	102
+honey-dip: 	119	120	121
+
+Consumer thread number: 25	Time: 23:42:51:528379
+Dozen#: 2
+plain:     	185	186	187	188
+jelly:     	224	225	226	227
+chocolate: 	191	192	193	194
+honey-dip: 
+
+Consumer thread number: 25	Time: 23:42:51:628604
+Dozen#: 3
+plain:     	303	304	305	306
+jelly:     	349	350
+chocolate: 	326	327
+honey-dip: 	354	355	356	357
+
+Consumer thread number: 25	Time: 23:42:51:728807
+Dozen#: 4
+plain:     	457	458	459
+jelly:     	497
+chocolate: 	486	487	488	489
+honey-dip: 	492	493	494	495
+
+Consumer thread number: 25	Time: 23:42:51:828973
+Dozen#: 5
+plain:     	628	629	630	631	632
+jelly:     	616	617	618
+chocolate: 	629
+honey-dip: 	659	660	661
+
+Consumer thread number: 25	Time: 23:42:51:929169
+Dozen#: 6
+plain:     	777	778	779
+jelly:     	753	754	755	756	757	758	759
+chocolate: 	797	798
+honey-dip: 
+
+Consumer thread number: 25	Time: 23:42:52:29347
+Dozen#: 7
+plain:     	939	940	941	942	943
+jelly:     	886	887	888
+chocolate: 	952	953
+honey-dip: 	955	956
+
+Consumer thread number: 25	Time: 23:42:52:129541
+Dozen#: 8
+plain:     	1112	1113	1114	1115
+jelly:     	1036	1037	1038	1039
+chocolate: 	1097	1098
+honey-dip: 	1087	1088
+
+Consumer thread number: 25	Time: 23:42:52:229692
+Dozen#: 9
+plain:     	1254	1255	1256	1257	1258
+jelly:     	1187	1188
+chocolate: 	1238	1239	1240	1241
+honey-dip: 	1253
+
+Consumer thread number: 25	Time: 23:42:52:329845
+Dozen#: 10
+plain:     	1398	1399	1400	1401	1402	1403
+jelly:     	1321	1322	1323
+chocolate: 	1394	1395
+honey-dip: 	1419
+
+/******************FOURTH SAMPLE CONSUMER*************************************/
+Consumer thread number: 37	Time: 23:42:51:397500
+Dozen#: 1
+plain:     	75	76
+jelly:     	103	104	105	106
+chocolate: 	76	77	78	79
+honey-dip: 	94	95
+
+Consumer thread number: 37	Time: 23:42:51:497706
+Dozen#: 2
+plain:     	158	159
+jelly:     	193	194
+chocolate: 	162	163	164	165
+honey-dip: 	183	184	185	186
+
+Consumer thread number: 37	Time: 23:42:51:597885
+Dozen#: 3
+plain:     	272	273	274
+jelly:     	311	312
+chocolate: 	282	283	284	285
+honey-dip: 	311	312	313
+
+Consumer thread number: 37	Time: 23:42:51:698085
+Dozen#: 4
+plain:     	413	414	415	416	417
+jelly:     	459	460
+chocolate: 	443	444	445	446
+honey-dip: 	461
+
+Consumer thread number: 37	Time: 23:42:51:798274
+Dozen#: 5
+plain:     	583	584	585	586	587	588
+jelly:     	586
+chocolate: 	588	589
+honey-dip: 	619	620	621
+
+Consumer thread number: 37	Time: 23:42:51:898486
+Dozen#: 6
+plain:     	735
+jelly:     	721	722	723
+chocolate: 	752	753	754	755	756	757
+honey-dip: 	768	769
+
+Consumer thread number: 37	Time: 23:42:51:998677
+Dozen#: 7
+plain:     	894	895	896	897
+jelly:     	852	853	854
+chocolate: 	920	921
+honey-dip: 	910	911	912
+
+Consumer thread number: 37	Time: 23:42:52:98902
+Dozen#: 8
+plain:     	1070	1071	1072
+jelly:     	1000	1001	1002	1003
+chocolate: 	1054	1055
+honey-dip: 	1052	1053	1054
+
+Consumer thread number: 37	Time: 23:42:52:199131
+Dozen#: 9
+plain:     	1221	1222	1223
+jelly:     	1142	1143	1144	1145	1146
+chocolate: 	1207	1208
+honey-dip: 	1206	1207
+
+Consumer thread number: 37	Time: 23:42:52:299319
+Dozen#: 10
+plain:     	1355	1356	1357
+jelly:     	1286	1287	1288
+chocolate: 	1362	1363	1364
+honey-dip: 	1373	1374	1375
+
+/******************FIFTH SAMPLE CONSUMER*************************************/
+Consumer thread number: 50	Time: 23:42:51:589326
+Dozen#: 1
+plain:     	257	258	259	260	261
+jelly:     	296	297	298
+chocolate: 	274	275	276
+honey-dip: 	301
+
+Consumer thread number: 50	Time: 23:42:51:689550
+Dozen#: 2
+plain:     	401	402
+jelly:     	448	449
+chocolate: 	430	431	432	433
+honey-dip: 	449	450	451	452
+
+Consumer thread number: 50	Time: 23:42:51:789760
+Dozen#: 3
+plain:     	569	570	571	572	573
+jelly:     	579
+chocolate: 	577	578	579	580
+honey-dip: 	603	604
+
+Consumer thread number: 50	Time: 23:42:51:889935
+Dozen#: 4
+plain:     	727
+jelly:     	708	709	710
+chocolate: 	736	737	738	739
+honey-dip: 	757	758	759	760
+
+Consumer thread number: 50	Time: 23:42:51:990083
+Dozen#: 5
+plain:     	882	883	884	885	886
+jelly:     	839	840
+chocolate: 	907
+honey-dip: 	900	901	902	903
+
+Consumer thread number: 50	Time: 23:42:52:90240
+Dozen#: 6
+plain:     	1055	1056	1057	1058	1059
+jelly:     	989	990
+chocolate: 	1042	1043
+honey-dip: 	1042	1043	1044
+
+Consumer thread number: 50	Time: 23:42:52:190419
+Dozen#: 7
+plain:     	1215	1216
+jelly:     	1129	1130
+chocolate: 	1191	1192	1193	1194
+honey-dip: 	1193	1194	1195	1196
+
+Consumer thread number: 50	Time: 23:42:52:290598
+Dozen#: 8
+plain:     	1347	1348
+jelly:     	1275	1276	1277	1278
+chocolate: 	1351
+honey-dip: 	1355	1356	1357	1358	1359
+
+Consumer thread number: 50	Time: 23:42:52:390800
+Dozen#: 9
+plain:     	1518	1519
+jelly:     	1410	1411	1412	1413	1414	1415
+chocolate: 	1486	1487	1488
+honey-dip: 	1514
+
+Consumer thread number: 50	Time: 23:42:52:490978
+Dozen#: 10
+plain:     	1661	1662
+jelly:     	1563	1564	1565
+chocolate: 	1629	1630	1631	1632
+honey-dip: 	1675	1676	1677
+
