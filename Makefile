@@ -1,5 +1,5 @@
 donutshop: donuts.h producer.o consumer.o sigwaiter.o main.o
-	cc -o donutshop main.o consumer.o producer.o sigwaiter.o -lpthread
+	cc -o pc_threads main.o consumer.o producer.o sigwaiter.o -lpthread
 main.o:	donuts.h main.c
 	cc -c main.c
 consumer.o: donuts.h consumer.c
@@ -9,4 +9,5 @@ producer.o: donuts.h producer.c
 sigwaiter.o:  donuts.h sigwaiter.c
 	cc -c sigwaiter.c
 clean:
-	rm *.o donutshop
+	rm *.o pc_threads
+

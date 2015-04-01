@@ -17,10 +17,10 @@
 #include <stdlib.h>
 
 #define         NUMFLAVORS       	4
-#define         NUMSLOTS        	1000
+#define         NUMSLOTS        	600
 #define         NUMCONSUMERS     	50
 #define		NUMPRODUCERS		30
-#define         DOZENS                  10
+#define         DOZENS                  200
 #define         DEBUG                   0       /* 1=ON, 0=OFF */
 
 /* Ring buffer */
